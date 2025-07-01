@@ -61,12 +61,12 @@ void ChassisControl(void *param)
   steering1.addoffsetangle = 0.0f;
   steering1.postureAngle = 135.0f;
   steering1.Key_GPIO_Port = GPIOA;
-  steering1.Key_GPIO_Pin = GPIO_PIN_4;
+  steering1.Key_GPIO_Pin = GPIO_PIN_7;
   steering1.DriveMotor.motorID = 0x00;
 
   steering2.addoffsetangle = 0.0f;
   steering2.postureAngle = 45.0f;
-  steering2.Key_GPIO_Port = GPIOA;
+  steering2.Key_GPIO_Port = GPIOC;
   steering2.Key_GPIO_Pin = GPIO_PIN_5;
   steering2.DriveMotor.motorID = 0x10;
 

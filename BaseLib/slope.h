@@ -2,6 +2,7 @@
 #define __SLOPE_H__
 
 #include "stm32f4xx_hal.h"
+#include "math.h"
 
 #define MOTOR_SLOPE_MODE_LINE   1
 #define MOTOR_SLOPE_MODE_ELINE  2

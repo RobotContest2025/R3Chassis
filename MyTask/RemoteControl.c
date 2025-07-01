@@ -28,12 +28,11 @@ float unlock_angle2=230.0f;
 float lock_angle1=175.0f;
 float lock_angle2=210.0f;
 
-float debug1=0.0f;
-float debug2=0.0f;
+float debug1=175.0f;
+float debug2=210.0f;
 
 uint8_t state=1;
 extern uint8_t forced_set_dir;
-
 
 void UartRecvTask(void* parma)
 {

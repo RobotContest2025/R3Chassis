@@ -26,9 +26,9 @@ int16_t lift_motor_launch_pos=200;
 int16_t lift_motor_jump_pos=0;
 
 //Ö÷Î¦¸ËËø¶¨¶æ»ú
-float left_lock=180.0f;
+float left_lock=240.0f;
 float left_unlock=80.0f;
-float right_lock=250.0f;
+float right_lock=270.0f;
 float right_unlock=150.0f;
 
 float lift_motor_vel=20000.0f;
