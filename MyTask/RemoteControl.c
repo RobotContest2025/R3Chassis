@@ -28,6 +28,11 @@ float unlock_angle2=230.0f;
 float lock_angle1=175.0f;
 float lock_angle2=210.0f;
 
+extern float left_lock;
+extern float left_unlock;
+extern float right_lock;
+extern float right_unlock;
+
 float debug1=175.0f;
 float debug2=210.0f;
 
@@ -72,6 +77,10 @@ void UartRecvTask(void* parma)
 		{
 			__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,SetSteeringEngineRAD270(unlock_angle1*3.14159265f/180.0f));
 			__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_2,SetSteeringEngineRAD270(unlock_angle2*3.14159265f/180.0f));
+		}
+		else if(chassis_ctrl.cmd == CMD_MODE_JUMP_LOCK){
+			__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3,SetSteeringEngineRAD270(left_lock*3.14159265f/180.0f));
+			__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4,SetSteeringEngineRAD270(right_lock*3.14159265f/180.0f));
 		}
 		else if(chassis_ctrl.cmd==10)
 		{

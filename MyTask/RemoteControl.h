@@ -9,8 +9,8 @@
 #define CMD_MODE_JUMP               2     //舵机操纵主桅杆取消锁定，主桅杆下降，轮子离地，准备跳跃
 #define CMD_MODE_LOCK_CHASSIS       3     //锁定上下小底盘
 #define CMD_MODE_UNLOCK_CHASSIS     4     //解除锁定上下小底盘
-#define CMD_MODE_LAUNCH             5     ///舵机操纵主桅杆取消锁定，主桅杆和轮子同时触地，同时轮子内八锁定防止车辆发射时旋转
-
+#define CMD_MODE_LAUNCH             5     //舵机操纵主桅杆取消锁定，主桅杆和轮子同时触地，同时轮子内八锁定防止车辆发射时旋转
+#define CMD_MODE_JUMP_LOCK			6	  //用于下降锁底盘
 
 #pragma pack(1)
 

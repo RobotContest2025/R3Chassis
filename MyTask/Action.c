@@ -122,7 +122,6 @@ void SwitchLaunchMode(void* param)
 		state=0;
 		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_3,SetSteeringEngineRAD270(left_lock*3.14159265f/180.0f));
 		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4,SetSteeringEngineRAD270(right_lock*3.14159265f/180.0f));
-		
 		vTaskDelay(300);
 		vel=0.0f;
 	}
